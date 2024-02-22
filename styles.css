@@ -1,0 +1,96 @@
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the min and max width as needed */
+    gap: 20px; /* Adjust the gap between items */
+}
+
+/* Medicine item */
+.medicine {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.medicine:hover {
+    transform: translateY(-5px); /* Add a slight lift effect on hover */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
+
+.medicine img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.medicine h2 {
+    font-size: 22px; /* Larger font size */
+    margin-bottom: 10px;
+    color: #333; /* Darker text color */
+    font-weight: bold; /* Bold font weight */
+}
+
+.medicine p {
+    font-size: 18px; /* Larger font size */
+    margin-bottom: 15px;
+    color: #666; /* Slightly darker text color */
+}
+
+.medicine input[type="number"] {
+    width: 60px;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.medicine button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.medicine button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Cart */
+#cart {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 250px;
+    position: sticky;
+    top: 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+#cart h2 {
+    font-size: 20px; /* Larger font size */
+    margin-bottom: 15px;
+    color: #333; /* Darker text color */
+    padding-left: 10px; /* Add left padding for the colored strip */
+    background-color: #007bff; /* Colored strip background */
+    color: #fff; /* Text color for the heading */
+    border-top-left-radius: 10px; /* Rounded corners for the top-left corner */
+    border-top-right-radius: 10px; /* Rounded corners for the top-right corner */
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666; /* Slightly darker text color */
+}
